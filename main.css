@@ -11,7 +11,6 @@ html {
 header {
     position: sticky;
     top: 0;
-    z-index: 100;
     width: 100%;
     background-color: white;
     padding-bottom: 5px;
@@ -616,6 +615,7 @@ footer input {
     height: auto;
     margin-top: 1.5rem;
     background-color: white;
+    border-radius: 1rem;
 }
 
 .footer__wrap__main__title-down__email {
@@ -642,6 +642,84 @@ footer .div12 {
 
 /* адаптив */
 
+/* Адаптив на планшет, много оишбок */
+
+@media(max-width: 850px) { 
+    .header__parent {
+        display: flex;
+    }
+
+    .header__links a {
+        font-size: 25px;
+    }
+
+    .section-1, .section-2 {
+        display: inline-block;
+    }
+
+    .text p,a, .date-of-article h3 {
+        font-size: 30px;
+    }
+
+    .name-of-article, .text p,a, .date-of-article {
+        padding-left: 10px;
+    }
+
+    .div3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .wrape-quote {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .wrape-quote p {
+        font-size: 40px;
+    }
+
+    cite {
+        font-size: 35px;
+    }
+
+
+    .section-2__image {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .section-2__image img {
+        width: 50%;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+    .section-2__text {
+        text-align: center;
+    }
+
+    .section-2__text h2 {
+        font-size: 2rem;
+    }
+
+    .section-2__text p {
+        font-size: 30px;
+    }
+
+    .section-2__link {
+        padding-bottom: 2rem;
+    }
+
+    .section-2__link a {
+        font-size: 30px;
+    }
+}
+
+/* ТЕЛЕФОН */
+
 @media(max-width: 450px) {
     header {
         position: relative;
@@ -649,12 +727,18 @@ footer .div12 {
 
     .header__parent {
         display: flex;
+        padding: 1rem;
     }
 
     .header__button {
-        display: block;
+        display: flex;
+        padding-left: 3rem;
     }
-    
+
+    .header__links {
+        display: inline;
+    }
+
     .section-1 {
         display: block;
         padding: 1rem;
@@ -664,12 +748,32 @@ footer .div12 {
         font-size: 40px;
     }
 
+    .date-of-article h3 {
+        font-size: 20px;
+    }
+
+    .name-of-article h2 {
+        font-size: 25px;
+    }
+
     .text {
         padding-left: 10px;
     }
 
+    .text p {
+        font-size: 20px;
+    }
+
     .wrape-quote {
         display: flex;
+    }
+
+    .quote p {
+        font-size: 20px;
+    }
+
+    cite {
+        font-size: 20px;
     }
 
     .div3 {
@@ -703,6 +807,18 @@ footer .div12 {
         padding-left: 10px;
     }
 
+    .section-2__text p {
+        font-size: 25px;
+    }
+
+    .section-2__text h2 {
+        font-size: 20px;
+    }
+
+    .section-2__text h1 {
+        font-size: 25px;
+    }
+
 
 
 
@@ -717,6 +833,20 @@ footer .div12 {
         height: auto;
     }
 
+    .section-3__card__text {
+        padding-bottom: 1.5rem;
+    }
+
+    .section-3__card__text p {
+        font-size: 20px;
+    }
+
+    .section-3__card__down {
+        padding-top: 4rem;
+    }
+
+    
+
 
     .section-4 {
         display: block;
@@ -726,7 +856,8 @@ footer .div12 {
         text-align: center;
     }
 
-    .faq-question, .faq-answer {
+    .faq-question,
+    .faq-answer {
         font-size: 15px;
     }
 
@@ -735,12 +866,14 @@ footer .div12 {
     }
 
     .section-4__image {
+        padding: 0;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
 
     .section-4__image img {
-        width: 95%;
+        width: 90%;
         height: auto;
     }
 
@@ -751,18 +884,18 @@ footer .div12 {
         display: block;
     }
 
-    .footer__wrap__main__title  h1 {
+    .footer__wrap__main__title h1 {
         font-size: 25px;
     }
 
     .footer__wrap__main {
         display: block;
         width: 95%;
-        height: 290px;
+        height: 310px;
         padding-left: 1rem;
     }
 
-    .footer__wrap  {
+    .footer__wrap {
         display: block;
         width: 100%;
         height: 600px;
@@ -771,6 +904,11 @@ footer .div12 {
     .footer__wrap__main__subscribe {
         display: flex;
         padding-top: 1rem;
+    }
+
+    .footer__wrap__main__title-down__logo img {
+        border-radius: 1rem;
+        padding: 0; margin: 0;
     }
 
     .footer__wrap__main__title-down {
