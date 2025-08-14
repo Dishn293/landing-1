@@ -642,8 +642,6 @@ footer .div12 {
 
 /* адаптив */
 
-/* Адаптив на планшет, много оишбок */
-
 @media(max-width: 850px) { 
     .header__parent {
         display: flex;
@@ -823,7 +821,7 @@ footer .div12 {
     .footer__wrap__main {
         display: block;
         width: 95%;
-        height: 310px;
+        height: 370px;
         padding-left: 1rem;
     }
 
@@ -843,9 +841,10 @@ footer .div12 {
 
     .footer__wrap__main__title-down__email p {
         font-size: 20px;
+        color: white;
     }
 
-
+    
 
 }
 
